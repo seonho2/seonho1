@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="자기소개, 홈페이지소개, 과제 소개 ">
+  <meta name="description" context="개인홈페이지를 만들어 봅니다.">
+  <meta name="author" context="Seonho Kim, 김선호">
+  <title>개인홈페이지 | 홈</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/Logo.jpg">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="logo">SENOHO</span> Web</h1>
+      </div>
+      <nav>
+        <li> <a href="./home.html">홈</a></li>
+        <li> <a href="./profile.html">프로필</a></li>
+        <li> <a href="./portfolio.html">포트폴리오</a></li>
+        <li> <a href="./team.html">팀프로젝트</a></li>
+        <li> <a href="./homepage.html">홈페이지소개</a></li>
+        <li> <a href="./curious.html">문의사항</a></li>
+        <li> <a href="./rest.html">휴식</a></li>
+      </nav>
+    </div>
+  </header>
+
+  <script language="javascript">
+    function gugudan(dan) {
+      document.write("<center>");
+      document.write("<h2>" + dan + "단 구구단 </h2>");
+      document.write("<table border=1>");
+      document.write("<tr><td width=30 align=center bgcolor=yellow>X</td>");
+      var i;
+      for (i = 1; i <= dan; i++) {
+        document.write("<tr><td align=center bgcolor=pink>+i+</td>");
+        for (j = 1; j <= dan; j++) {
+          document.write("<td align=center>" + i * j + "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+      document.write("</center>");
+    }
+  </script>
+
+  <h1>구구단 만들기</h1>
+
+  <form>
+    <h2>몇단을 만들까요? <input type="text1" size="5" value="9" name="dan">
+      <input type="button" value="구구단 만들기" onclick="gugudan(dan.value)">
+    </h2>
+  </form>
+</body>
+
+</html>
